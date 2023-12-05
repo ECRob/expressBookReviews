@@ -16,7 +16,7 @@ public_users.post("/register", (req,res) => {
             return res.status(200).json({message:"Customer successfully registered. Now you can log in"});
         }
         else {
-            return res.status(400).json({message:"Already registered"});
+            return res.status(400).json({message:"Customer already registered"});
         }
     }
     else {
